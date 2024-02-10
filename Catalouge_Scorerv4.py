@@ -6,7 +6,9 @@ from langchain_community.llms import HuggingFaceHub
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+#Please replace your Hugging face access token in the below 'api_key'
+
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "api_key"
 
 llm = HuggingFaceHub(
     repo_id="mistralai/Mistral-7B-Instruct-v0.2", model_kwargs={"temperature": 0.5, "max_length": 64}
